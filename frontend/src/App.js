@@ -160,10 +160,7 @@ class App extends Component {
   render() {
     let routes = (
       <Switch>
-        <Route
-          path="/"
-          exact
-          render={props => (
+        <Route path="/" exact render={props => (
             <LoginPage
               {...props}
               onLogin={this.loginHandler}
